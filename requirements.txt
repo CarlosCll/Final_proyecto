@@ -1,6 +1,6 @@
 fastapi
 pydantic
-#gunicorn
+gunicorn
 numpy
 tensorflow
 Pillow
