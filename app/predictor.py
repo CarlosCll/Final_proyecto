@@ -7,6 +7,7 @@ from skimage.morphology import disk
 import tensorflow_hub as hub
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
+
 class Predictor:
     def __init__(self, labels_path: str, model_path: str, labels_path_E: str, model_path_E: str, image_size: int):
         self.labels_path = labels_path
