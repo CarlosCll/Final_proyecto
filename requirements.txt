@@ -1,0 +1,11 @@
+fastapi
+pydantic
+#gunicorn
+numpy
+tensorflow
+Pillow
+uvicorn
+python-multipart
+opencv-python
+scikit-image
+tensorflow-hub
