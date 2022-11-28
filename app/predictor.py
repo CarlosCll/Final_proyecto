@@ -38,7 +38,8 @@ class Predictor:
         V= I_HSV[:,:,2] # COMPONENTE V
         umbral1=130
         umbral1_1=180
-        temp = ((H>umbral1 )& (H<umbral1_1)) | ((H>0) & (H<40))
+        #temp = ((H>umbral1 )& (H<umbral1_1)) | ((H>0) & (H<40))
+        temp = (((H>0) & (H<30)))
         temp[temp]=1
         Z = np.uint8(temp)
         ret3, thresh3 = cv2.threshold(np.uint8(temp),0,1,cv2.THRESH_BINARY)
